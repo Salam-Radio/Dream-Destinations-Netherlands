@@ -1,0 +1,317 @@
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+.header-image {
+    position: relative;
+    text-align: center;
+    background: url('images/flag.png') center/cover no-repeat; /* Set background to flag.png */
+    height: 100px; /* Adjust the height as needed */
+}
+
+.header-image img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.header-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color as needed */
+}
+
+
+/* Navbar styles */
+.navbar {
+  background-color: #21468B; /* Dark blue color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+  color: #FFFFFF; /* White color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #FFFFFF; /* White color */
+  transition: color 0.3s ease;
+}
+
+/* Header styles */
+.jumbotron {
+  background-color: #FF214D; /* Red color */
+  color: #FFFFFF; /* White color */
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 5px solid #21468B; /* Dark blue color */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1.2em;
+}
+
+/* Main content styles */
+.container {
+  margin-top: 40px;
+}
+
+/* Button styles */
+.btn-link {
+  color: #21468B; /* Dark blue color */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #FF214D; /* Red color */
+  color: #FFFFFF; /* White color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Search bar styles */
+#searchBar {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #21468B; /* Dark blue color */
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchBar:focus {
+  outline: none;
+  border-color: #FF214D; /* Red color */
+  box-shadow: 0 0 10px rgba(33, 70, 139, 0.3);
+}
+
+/* Gallery section styles */
+#carouselExample {
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #FFFFFF; /* White color */
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2em;
+}
+
+/* Footer styles */
+footer {
+  background-color: #21468B; /* Dark blue color */
+  color: #FFFFFF; /* White color */
+  padding: 30px 0;
+  border-top: 5px solid #FF214D; /* Red color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 40px 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.5em;
+  }
+
+  .jumbotron p {
+    font-size: 1em;
+  }
+
+  #searchBar {
+    font-size: 0.9em;
+  }
+
+
+}
+#testimonials-carousel .carousel-inner {
+  display: flex;
+  height: 100%;
+}
+#testimonials-carousel .carousel-item {
+  text-align: center;
+}
+
+#testimonials-carousel blockquote {
+  margin: 0;
+  padding: 10px;
+}
+
+#testimonials-carousel blockquote p {
+  margin-bottom: 10px; /* Add margin to the bottom of the quote for separation */
+}
+
+#testimonials-carousel blockquote footer {
+  color: white;
+  margin-top: 10px; /*for separation */
+}
+
+#testimonials-carousel .carousel-control-prev,
+#testimonials-carousel .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#testimonials-carousel .carousel-control-prev-icon,
+#testimonials-carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+#testimonials-carousel .carousel-control-prev:hover,
+#testimonials-carousel .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#why-netherlands {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#why-netherlands h2 {
+  color: #007bff;
+  margin-bottom: 40px;
+}
+
+#why-netherlands p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #495057;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#why-netherlands p::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF214D;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Navbar animations */
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header animations */
+.jumbotron {
+  animation: slideIn 1s ease-in-out, fadeIn 1s ease-in-out;
+}
+
+/* Button animations */
+.btn-link, .btn-primary {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Search bar animations */
+#searchBar {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Gallery section animations */
+.card {
+  animation: fadeIn 1s ease-in-out, scaleIn 0.5s ease-in-out;
+}
+
+.card:hover {
+  animation: translateYUp 0.3s ease-in-out, boxShadowUp 0.3s ease-in-out;
+}
+
+/* Footer animations */
+footer {
+  animation: slideIn 1s ease-in-out, fadeIn 1s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes translateYUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes boxShadowUp {
+  from {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
